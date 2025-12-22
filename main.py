@@ -43,7 +43,7 @@ def main():
             if object.collides_with(player):
                 log_event("player_hit")
                 print("Game over!")
-                sys.exit()
+                sys.exit() # type: ignore
         for object in asteroids:
             for shot in shots:
                 if object.collides_with(shot):
